@@ -3,46 +3,49 @@
 This project focuses on developing user interfaces using both **tkinter** and **PyQt** frameworks. The repository demonstrates two desktop applications that manage a simple School Management System backed by SQLite.
 
 ## Technologies Used
-- **tkinter** – Python's built-in GUI toolkit for creating desktop applications  
-- **PyQt** – Python bindings for the Qt application framework  
-- **SQLite** – Lightweight embedded database (`sqlite3` stdlib)
+
+* **tkinter** – Python's built-in GUI toolkit for creating desktop applications
+* **PyQt** – Python bindings for the Qt application framework
+* **SQLite** – Lightweight embedded database (`sqlite3` stdlib)
 
 ## Project Structure
+
 The project includes implementations of GUI applications using both frameworks, showcasing different approaches to desktop application development in Python.
 
 **Top-level files**
-- **PyQt app**
-  - `PyQt.py` — main PyQt GUI
-  - `database_pyqt.py` — DB helpers for the PyQt app
-  - `classes.py` — helper module for the PyQt part 
-- **Tkinter app**
-  - `tkinter-ui.py` — main Tkinter GUI
-  - `utils.py` — repository/service layer (validation, CRUD, import/export)
-  - `database.py` — SQLite helpers + schema creation
-- **Data**
-  - `school.db` — SQLite database (auto-created on first run)
+
+* **PyQt app**
+
+  * `PyQt.py` — main PyQt GUI
+  * `database_pyqt.py` — DB helpers for the PyQt app
+  * `classes.py` — helper module for the PyQt part (maintained by teammate)
+* **Tkinter app**
+
+  * `tkinter-ui.py` — main Tkinter GUI
+  * `utils.py` — repository/service layer (validation, CRUD, import/export)
+  * `database.py` — SQLite helpers + schema creation
+* **Data**
+
+  * `school.db` — SQLite database (auto-created on first run)
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
-- Python 3.x installed on your system
-- macOS, Linux, or Windows operating system
+
+* Python 3.x installed on your system
+* macOS, Linux, or Windows operating system
 
 ### Installation and Setup
 
 Follow these step-by-step commands to set up and run the **PyQt** School Management System:
-Use this one-liner:
 
-```bash
-git clone https://github.com/<your-username>/Lab4-MayssaHajjHassan_AhmadAbbas.git && cd Lab4-MayssaHajjHassan_AhmadAbbas
-```
+1. **Clone the repository and enter the folder:**
 
-1. **Navigate to the project directory:**
    ```bash
-   cd /path/to/Lab4-MayssaHajjHassan_AhmadAbbas
-```
+   git clone https://github.com/<your-username>/Lab4-MayssaHajjHassan_AhmadAbbas.git && cd Lab4-MayssaHajjHassan_AhmadAbbas
+   ```
 
 2. **Create a virtual environment:**
 
@@ -86,9 +89,9 @@ A small desktop GUI (Tkinter) that manages **Students**, **Instructors**, and **
 
 **Files (repo root):**
 
-* `tkinter-ui.py` — GUI (tabs, forms, tables, buttons).
-* `utils.py` — repository/service layer (validation, CRUD, import/export).
-* `database.py` — SQLite helpers + schema creation.
+* `tkinter-ui.py` — GUI (tabs, forms, tables, buttons)
+* `utils.py` — repository/service layer (validation, CRUD, import/export)
+* `database.py` — SQLite helpers + schema creation
 
 **Features:**
 
@@ -103,25 +106,18 @@ A small desktop GUI (Tkinter) that manages **Students**, **Instructors**, and **
 * Uses `school.db` (auto-created next to the files).
 * On first run, if `school_data.json` exists, it’s imported automatically.
 
-**Run (Tkinter)**
+**Run (Tkinter):**
 
 ```bash
 python3 tkinter-ui.py
 ```
 
-**Buttons (top bar):**
-
-* **Save JSON** → exports all data to `school_data.json`
-* **Export CSV** → exports all tables into one CSV with section headers
-* **Load JSON** → imports from a JSON file (upsert)
-* **Backup DB** → saves a copy of `school.db`
-
-**Requirements for Tkinter runtime (OS packages):**
+**Runtime requirements for Tkinter (OS packages):**
 
 * Ubuntu/Debian: `sudo apt install -y python3-tk sqlite3`
 * Fedora: `sudo dnf install -y python3-tkinter sqlite`
 * macOS (Homebrew): `brew install python tcl-tk sqlite`
-* Windows: install Python from python.org (ensure **tcl/tk** is selected)
+* Windows: install Python from python.org and ensure **tcl/tk** is selected
 
 > No extra pip packages are required for the Tkinter app.
 
@@ -132,4 +128,3 @@ python3 tkinter-ui.py
 ```bash
 deactivate
 ```
-
