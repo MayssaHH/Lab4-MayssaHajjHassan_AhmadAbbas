@@ -42,7 +42,7 @@ git clone https://github.com/<your-username>/Lab4-MayssaHajjHassan_AhmadAbbas.gi
 1. **Navigate to the project directory:**
    ```bash
    cd /path/to/Lab4-MayssaHajjHassan_AhmadAbbas
-````
+```
 
 2. **Create a virtual environment:**
 
