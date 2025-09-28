@@ -35,7 +35,7 @@ from PyQt5.QtWidgets import (
 )
 
 from classes import Student, Instructor, Course
-from database import DatabaseManager
+from database_pyqt import DatabaseManager
 
 
 # i am defining these functions just to avoid repetition in my code
