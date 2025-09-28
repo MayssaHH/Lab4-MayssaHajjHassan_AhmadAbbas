@@ -1,4 +1,3 @@
-````markdown
 # Lab4-MayssaHajjHassan_AhmadAbbas
 
 This project focuses on developing user interfaces using both **tkinter** and **PyQt** frameworks. The repository demonstrates two desktop applications that manage a simple School Management System backed by SQLite.
